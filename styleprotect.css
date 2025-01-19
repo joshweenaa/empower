@@ -1,0 +1,262 @@
+/* General Styles */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: url('image.png') no-repeat center center; /* Center the image */
+    background-size: cover; /* Ensure it covers the entire header */
+    color: #fdfafa;
+    padding: 100px 0;
+    text-align: center;
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 5em;
+    font-weight: bold;
+    letter-spacing: 5px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); /* Add shadow */
+}
+
+.quick-nav {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the nav items */
+    margin:0; /* Add some vertical spacing */
+    padding: 0; /* Remove padding */
+}
+
+.nav-links {
+    display: flex; /* Use flexbox for the list */
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    width: 100%; /* Allow the nav links to take full width */
+}
+
+.nav-links li {
+    flex: 1; /* Each item will take equal space */
+    text-align: center; /* Center text within each item */
+    position: relative; /* Positioning context for the separator line */
+}
+
+.nav-links li:not(:last-child)::after {
+    content: ''; /* Create a separator line */
+    position: absolute; /* Position it absolutely within the li */
+    right: 0; /* Align it to the right edge of the li */
+    top: 50%; /* Center it vertically */
+    width: 1px; /* Width of the line */
+    height: 50%; /* Height of the line */
+    background-color: #0078d7; /* Color of the line */
+    transform: translateY(-50%); /* Center the line vertically */
+}
+
+.nav-links a {
+    display: block; /* Make links block elements to fill li */
+    text-decoration: none; /* Remove underline from links */
+    color: #0078d7; /* Link color */
+    font-weight: bold; /* Bold text for emphasis */
+    padding: 5px 0; /* Add vertical padding for clickable area */
+}
+
+.nav-links a:hover {
+    background-color: #3c12f725; /* Change background on hover */
+}
+
+
+
+/* Slideshow Styles */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+}
+
+.mySlides {
+    display: none; /* Hidden by default */
+}
+
+.mySlides img {
+   width: 100%; /* Responsive images */
+   height: auto; /* Maintain aspect ratio */
+   border-radius: 10px; /* Rounded corners for images */
+}
+
+.slide-caption {
+   position: absolute;
+   bottom: 20px;
+   left: 50%;
+   transform: translateX(-50%);
+   background-color: rgba(0,0,0,0.7);
+   color: white;
+   padding: 10px;
+   border-radius: 5px;
+}
+
+.prev, .next {
+   cursor: pointer; 
+   position: absolute; 
+   top: 50%; 
+   width: auto; 
+   padding: 16px; 
+   color: white; 
+   font-weight: bold; 
+   font-size: 24px; /* Corrected syntax for font size */
+   border-radius: 50%; /* Circular buttons */
+   background-color: rgba(0,0,0,.5); /* Semi-transparent background */
+   transition: background-color .3s ease; /* Smooth transition on hover */
+}
+
+.prev:hover, .next:hover {
+   background-color: rgba(0,0,0,.8); /* Darker on hover */
+}
+
+.prev { left: 10px; transform: translateY(-50%); }
+.next { right: 10px; transform: translateY(-50%); }
+
+/* Quick Links */
+.quick-links {
+    display: flex; /* Flexbox for alignment */
+    justify-content: center; /* Center the links */
+    margin-top: 20px; /* Space above the links */
+    font-size: 125%;
+    letter-spacing: 2px; 
+}
+
+.quick-links a {
+    display:inline-block; 
+    margin-right:15px; 
+    padding:10px 15px; 
+    background-color:#0078d7; 
+    color:#fff; 
+    border-radius:5px; 
+    text-decoration:none;
+    transition: background-color .3s ease; /* Smooth transition on hover */
+}
+
+.quick-links a:hover { 
+    background-color:#005bb5; /* Darker shade on hover */
+}
+
+/* Section Styles */
+.section {
+    margin-top:40px; 
+   margin-bottom:40px; 
+   padding:20px;
+   background-color:#f1f1f1; /* Light background for sections */
+   border-radius:8px; /* Rounded corners for sections */
+   box-shadow:0 2px 10px rgba(0,0,0,0.1); /* Subtle shadow effect */
+}
+
+.section h3 { 
+   border-bottom:2px solid #0078d7; 
+   padding-bottom:10px;
+   font-size: 200%;
+}
+
+.section p {
+   font-size:150%; /* Slightly larger text for better readability */
+}
+
+/* Footer Styles */
+footer {
+   background-color:#333;
+   color:white;
+   text-align:center;
+   padding:20px;
+}
+
+footer a:hover { 
+   text-decoration: underline; /* Fixed syntax error here */
+}
+
+
+/* Quick Navigation Styles */
+.quick-nav {
+    background-color: #005bb5; /* Match header color */
+    padding: .01cm 0; /* Padding for top and bottom */
+    font-size: 125%;
+    letter-spacing: 3px; 
+    box-shadow:0 2px 10px rgba(0,0,0,0.7); /* Subtle shadow effect */
+
+}
+
+.quick-nav .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.quick-nav .nav-links li {
+    margin: 0 15px; /* Space between links */
+}
+
+.quick-nav .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+.quick-nav .nav-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.welcome-header {
+    background-color: #0078d7; /* Blue background color */
+    color: white; /* Text color */
+    text-align: center; /* Centered text */
+    padding: 20px; /* Padding around the text */
+    position: relative; /* Positioning context for animation */
+    animation: moveLeft 20s linear infinite; /* Apply the animation */
+}
+
+/* Keyframes for continuous left movement */
+@keyframes moveLeft {
+    0% {
+        transform: translateX(100%); /* Start off-screen to the right */
+    }
+    100% {
+        transform: translateX(-100%); /* Move off-screen to the left */
+    }
+}
+
+.welcome-header h2 {
+    margin: 0; /* Remove default margin */
+    font-size: 120%; /* Font size for the welcome message */
+    letter-spacing: 5px; 
+}
+
+
+/* Main Container Styles */
+.container {
+    max-width: 100%; /* Allow full width for larger screens */
+    margin: 20px auto; /* Center the container with vertical spacing */
+    padding: 10px; /* Reduced padding for more content space */
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 30px; /* Reduced space between sections */
+    padding: 15px; /* Adjusted padding to maximize content area */
+    background-color: #f1f1f1; /* Light gray background for sections */
+    border-left: 5px solid #0078d7; /* Left border for emphasis */
+    border-radius: 5px; /* Rounded corners for sections */
+    font-size: 2em;
+}
+
+/* Section Title Styles */
+h2 {
+    color: #0078d7; /* Section title color */
+    font-size: 2em; /* Increased font size for prominence */
+    margin-bottom: 10px; /* Reduced space below the title */
+    text-transform: uppercase; /* Uppercase for emphasis */
+    letter-spacing: 1px; /* Slightly increased letter spacing */
+}
+

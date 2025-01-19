@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copyright Protection for Digital Creations</title>
+    <link rel="stylesheet" href="stylecopyrigt.css">
+</head>
+
+<body>
+    <div class="welcome-header">
+        <h2>Your Copyright Protection is Our Top Priority</h2>
+    </div>
+
+    <header>
+        <h1>Copyright Protection for Digital Creations in the Philippines</h1>
+    </header>
+
+   
+   <nav aria-label="Quick Navigation" class="quick-nav">
+    <ul class="nav-links">
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="protect.html">Patient Confidentiality</a></li>
+        <li><a href="copyright.html">Copyright Protection</a></li>
+        <li><a href="Report.html">Report</a></li>        </ul>
+    </nav>
+
+    <main>
+        <div class="slideshow-container">  
+            <div class="mySlides fade">
+            <img src="hshaahi.gif" alt="Slide 1">
+            <div class="slide-caption">Slide 1</div>
+        </div>
+            <div class="mySlides fade">
+                <img src="c1.jpg" alt="Slide 1">
+                <div class="slide-caption">Slide 1</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="c2.jpg" alt="Slide 2">
+                <div class="slide-caption">Slide 2</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="c3.jpg" alt="Slide 3">
+                <div class="slide-caption">Slide 3</div>
+            </div>
+
+            <button class="prev" aria-label="Previous Slide" onclick="plusSlides(-1)">&#10094;</button>
+            <button class="next" aria-label="Next Slide" onclick="plusSlides(1)">&#10095;</button>
+        </div>
+
+        <div class="container">
+            <section id="laws">
+                <h2>Relevant Copyright Laws in the Philippines</h2>
+                <p>In the Philippines, copyright protection is governed by the Intellectual Property Code, which provides automatic protection for original works from the moment of creation. Key points include:</p>
+                <ul>
+                    <li><strong>Intellectual Property Code (Republic Act No. 8293)</strong>: Protects literary and artistic works, including digital creations.</li>
+                    <li><strong>Duration of Protection</strong>: Copyright lasts for the lifetime of the author plus 50 years.</li>
+                    <li><strong>Automatic Protection</strong>: No registration is required to enjoy copyright rights, but registration is recommended for legal benefits.</li>
+                </ul>
+            </section>
+
+            <section id="best-practices">
+                <h2>Best Practices for Copyright Protection of Digital Creations</h2>
+                <p>To ensure your digital creations are protected, consider the following best practices:</p>
+                <ul>
+                    <li><strong>Document Creation:</strong> Keep records of your work's creation process, including drafts and dates.</li>
+                    <li><strong>Register Your Work:</strong> Although not mandatory, registering your copyright with the National Library of the Philippines can strengthen your legal position.</li>
+                    <li><strong>Use Copyright Notices:</strong> Clearly mark your work with a copyright notice to inform others of your rights.</li>
+                    <li><strong>Monitor Usage:</strong> Regularly check for unauthorized use of your work online and take action if necessary.</li>
+                    <li><strong>Educate Yourself:</strong> Stay informed about copyright laws and how they apply to digital content.</li>
+                </ul>
+            </section>
+
+            <section id="importance">
+                <h2>The Importance of Copyright Protection for Digital Creations</h2>
+                <p>Protecting your digital creations is crucial for several reasons:</p>
+                <ul>
+                    <li><strong>Exclusive Rights:</strong> Ensures you have control over how your work is used and distributed.</li>
+                    <li><strong>Legal Recourse:</strong> Provides a basis for legal action against infringement or unauthorized use.</li>
+                    <li><strong>Monetary Opportunities:</strong> Allows you to license or sell your work, creating potential revenue streams.</li>
+                    <li><strong>Cultural Value:</strong> Protecting creative works contributes to cultural heritage and innovation.</li>
+                </ul>
+            </section>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Digital Creation Copyright Protection Philippines. All rights reserved.</p>
+        </footer>
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function showSlides(n) {
+                const slides = document.getElementsByClassName("mySlides");
+                if (n > slides.length) { slideIndex = 1; }
+                if (n < 1) { slideIndex = slides.length; }
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex - 1].style.display = "block";
+            }
+
+            setInterval(() => plusSlides(1), 5000);
+        </script>
+
+    </body>
+</html>
+

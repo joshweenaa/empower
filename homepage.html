@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy and Copyright Protection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="welcome-header">
+        <h2>Your privacy and Protection Are Our Top Priorities</h2>
+    </div>
+    
+<body>
+    <header>
+        <h1>Empowering Privacy and Protection in the Digital Age</h1>
+    </header>
+
+    <nav aria-label="Quick Navigation" class="quick-nav">
+        <ul class="nav-links">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="protect.html">Patient Confidentiality</a></li>
+            <li><a href="copyright.html">Copyright Protection</a></li>
+            <li><a href="Report.html">Report</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="slideshow-container">
+            <div class="mySlides fade"> 
+                <img src="developer-dribbble.gif" alt="Slide 1">
+                <div class="slide-caption">Slide 1</div>
+            </div>
+
+        <section id="about" class="section">
+            <h3>About Us</h3>
+            <p>We empower professionals to safeguard patient confidentiality and protect digital intellectual property in an ever-evolving digital world.</p>
+        </section>
+
+        <section id="education" class="section">
+            <h3>Education Hub</h3>
+            <p>Learn the best practices for securing patient data and protecting your digital creations with our comprehensive guides and resources.</p>
+        </section>
+
+        <section id="resources" class="section">
+            <h3>Resources</h3>
+            <p>Access tools, templates, and tutorials to help you stay compliant and safeguard your work effectively.</p>
+        </section>
+
+        <section id="consultation" class="section">
+            <h3>Consultation & Services</h3>
+            <p>Our experts provide personalized advice to ensure compliance and protect your assets.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Privacy and Copyright Protection. All Rights Reserved.
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms of Use</a>
+        </p>
+    </footer>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            const slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) { slideIndex = 1; }
+            if (n < 1) { slideIndex = slides.length; }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+
+        setInterval(() => plusSlides(1), 5000);
+    </script>
+
+</body>
+
+</html>

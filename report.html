@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Confidentiality and Copyright Protection Report</title>
+    <link rel="stylesheet" href="stylereport.css">
+</head>
+
+<body>
+    <div class="welcome-header">
+        <h2>Your Privacy and Protection Are Our Top Priorities</h2>
+    </div>
+
+    <header>
+        <h1>Report on Patient Confidentiality and Copyright Protection</h1>
+    </header>
+
+    <!-- Quick Navigation Bar -->
+    <nav aria-label="Quick Navigation" class="quick-nav">
+        <ul class="nav-links">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="protect.html">Patient Confidentiality</a></li>
+            <li><a href="copyright.html">Copyright Protection</a></li>
+            <li><a href="report.html">Report</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div class="slideshow-container">  
+            <div class="mySlides fade">
+            <img src="okes.gif" alt="Slide 1">
+            <div class="slide-caption">Slide 1</div>
+        </div>
+
+            <button class="prev" aria-label="Previous Slide" onclick="plusSlides(-1)">&#10094;</button>
+            <button class="next" aria-label="Next Slide" onclick="plusSlides(1)">&#10095;</button>
+        </div>
+
+        <!-- Report Content Section -->
+        <section id="report-content" class="section">
+            <h3>Executive Summary</h3>
+            <p>This report outlines the essential practices for safeguarding patient confidentiality and protecting digital creations in the healthcare sector. It highlights the importance of compliance with legal standards and ethical guidelines.</p>
+
+            <h3>Protecting Patient Confidentiality</h3>
+            <p>Patient confidentiality is crucial in maintaining trust between healthcare providers and patients. Key practices include:</p>
+            <ul>
+                <li>Implementing secure electronic health record (EHR) systems.</li>
+                <li>Training staff on data privacy regulations such as HIPAA.</li>
+                <li>Conducting regular audits to ensure compliance.</li>
+            </ul>
+
+            <h3>Copyright Protection for Digital Creations</h3>
+            <p>As digital content becomes more prevalent, protecting intellectual property is essential. Strategies include:</p>
+            <ul>
+                <li>Registering copyrights for original works.</li>
+                <li>Using watermarks and digital rights management (DRM) tools.</li>
+                <li>Educating staff about copyright laws and fair use policies.</li>
+            </ul>
+
+            <h3>Conclusion</h3>
+            <p>By implementing robust measures to protect patient data and intellectual property, organizations can foster a secure environment that promotes trust and innovation.</p>
+          
+            <section id="report-form" class="section">
+                <h3>Report an Issue</h3>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="issue-type">Type of Issue:</label>
+                        <select id="issue-type" name="issue-type" required>
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="patient-confidentiality">Patient Confidentiality Breach</option>
+                            <option value="copyright-issue">Copyright Issue</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="description">Description of the Issue:</label>
+                        <textarea id="description" name="description" rows="4" placeholder="Provide a detailed description of the issue" required></textarea>
+                    </div>
+            
+                    <div class="form-actions">
+                        <button type="submit">Submit Report</button>
+                    </div>
+                </form>
+            </section>            
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Privacy and Copyright Protection. All Rights Reserved.
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms of Use</a>
+        </p>
+    </footer>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            const slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) { slideIndex = 1; }
+            if (n < 1) { slideIndex = slides.length; }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+
+        setInterval(() => plusSlides(1), 5000);
+    </script>
+
+</body>
+
+</html>
